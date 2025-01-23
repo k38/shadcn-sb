@@ -1,11 +1,32 @@
 {
-  "name": "shadcn-sb",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@k38/shadcn-sb",
+  "// package": "-----------------------------------------------",
+  "private": false,
+  "version": "0.0.10",
   "type": "module",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "style": "./dist/index.css",
+  "types": "./dist/index.d.ts",
+  "author": "k38",
+  "license": "MIT",
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "reqiure": "./dist/index.umd.cjs",
+      "import": "./dist/index.js"
+    },
+    "./dist/index.css": {
+      "require": "./dist/index.css",
+      "import": "./dist/index.css"
+    },
+    "./src/index.css": "./dist/index.css"
+  },
+  "// develop": "-----------------------------------------------",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build && tsc -b",
+    "build_org": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

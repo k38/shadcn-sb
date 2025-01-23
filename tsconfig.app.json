@@ -12,8 +12,15 @@
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
+    // "noEmit": false,  // bundle
+    // "noEmit": true,
     "jsx": "react-jsx",
+
+    /* bundle */
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "./dist",
 
     /* Linting */
     "strict": true,
@@ -27,8 +34,14 @@
     "paths": {
       "@/*": [
         "./src/*"
+        // "./src/**/*.ts"
+        // "/src/*"
+        // "../src/*"
+        // "src/*"
       ]
     }
   },
-  "include": ["src"]
+  "include": ["src"] // これを消しても現象は変わらない
+  // "include": ["src/*"] // ここを変えても現象は変わらない
+  // "include": ["./src/**/*.ts", "./src/**/*.tsx"] // ここを変えても現象は変わらない
 }
