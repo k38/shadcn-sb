@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-    darkMode: ["class"],
-    content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
+export default {	
+  darkMode: ["class"],
+  prefix: "micoui-", // build 時に利用している utility class にプレフィックスをつけて dist に出力してくれる
+  content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
   	extend: {
   		borderRadius: {
