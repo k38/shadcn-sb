@@ -1,5 +1,7 @@
 import * as React from "react"
 import { Button as ShadcnButton, ButtonProps as ShadcnButtonProps } from "@/components/ui/button"
+// import { Button as ShadcnButton, ButtonProps as ShadcnButtonProps } from "../components/ui/button"
+import "@/index.css"
 
 export interface ButtonProps extends ShadcnButtonProps {}
 

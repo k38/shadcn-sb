@@ -1,9 +1,11 @@
-"use client"
-
+// "use client"
 import * as React from "react"
 import { X } from "lucide-react"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
+// import { Dialog, DialogConten/t, DialogTrigger } from "../components/ui/dialog"
 import { Button } from "@/components/ui/button"
+// import { Button } from "../components/ui/button"
+import "@/index.css"
 
 interface FullScreenDialogProps {
   trigger: React.ReactNode

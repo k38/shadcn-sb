@@ -1,5 +1,7 @@
 import * as React from "react"
 import { Input as ShadcnInput } from "@/components/ui/input"
+// import { Input as ShadcnInput } from "../components/ui/input"
+import "@/index.css"
 
 export interface InputProps extends React.ComponentProps<"input"> {}
 
