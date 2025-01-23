@@ -186,6 +186,15 @@ button:focus-visible {
 
 
 @layer base {
+  .border-border {
+    /* */
+  }
+  .bg-background {
+    /* */
+  }
+  .text-foreground {
+    /* */
+  }
   * {
     @apply border-border;
   }
